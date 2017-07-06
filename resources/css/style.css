@@ -59,3 +59,38 @@ div {
 .column.small {
   width: 240px;
 }
+
+.image-content {
+  display: flex;
+  margin-top: 15px;
+  font-size: 30px;
+  font-family: Georgia;
+  height: 300px;
+  color: white;
+  font-weight: bold;
+  width: auto;
+}
+
+.lead-story .image-content {
+  background-image: url("../images/champagne.png");
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.fall-cancelled.image-content {
+  background-image: url("../images/fall-trees.png");
+}
+
+.hipster.image-content {
+  background-image: url("../images/camera.png");
+}
+
+.cat-ceo.image-content {
+  background-image: url("../images/cat.png");
+}
+
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}

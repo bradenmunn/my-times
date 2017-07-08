@@ -34,16 +34,17 @@ header a {
 }
 
 div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .content {
   display: flex;
+  justify-content: space-between;
 }
 
 .column {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   margin-right: 30px;
   margin-top: 30px;
 }
@@ -68,13 +69,14 @@ div {
   height: 300px;
   color: white;
   font-weight: bold;
-  width: auto;
+  text-align: center;
 }
 
 .lead-story .image-content {
   background-image: url("../images/champagne.png");
   font-size: 40px;
   margin-top: 0px;
+  text-align: left;
 }
 
 .fall-cancelled.image-content {
@@ -93,4 +95,16 @@ div {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+.stories {
+  dipslay: flex;
+  justify-content: space-between;
+}
+
+.story {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 280px;
 }

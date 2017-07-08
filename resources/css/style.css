@@ -39,7 +39,6 @@ div {
 
 .content {
   display: flex;
-  justify-content: space-between;
 }
 
 .column {
@@ -98,7 +97,7 @@ div {
 }
 
 .stories {
-  dipslay: flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -106,5 +105,5 @@ div {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  width: 280px;
+  width: 300px;
 }

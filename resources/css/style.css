@@ -1,3 +1,9 @@
+* {
+  box-sizing: content-box;
+}
+
+/*HEADER*/
+
 header {
   font-family: Verdana;
   font-size: 14px;
@@ -29,13 +35,11 @@ nav span {
   padding: 20px 10px;
 }
 
-header a {
+a {
   color: black;
 }
 
-div {
-  /* border: 1px solid black; */
-}
+/*GENERAL STYLING*/
 
 .content {
   display: flex;
@@ -44,16 +48,17 @@ div {
 .column {
   display: flex;
   flex-flow: column wrap;
-  margin-right: 30px;
   margin-top: 30px;
 }
 
 .column.large {
-  width: 630px;
+  width: 660px;
+  margin-right: 30px;
 }
 
 .column.medium {
   width: 300px;
+  margin-right: 30px;
 }
 
 .column.small {
@@ -68,14 +73,33 @@ div {
   height: 300px;
   color: white;
   font-weight: bold;
+  align-items: center;
   text-align: center;
 }
+
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.story-title {
+  font-family: Georgia;
+  font-size: 20px;
+  color: black;
+}
+
+/*First Column Specific*/
 
 .lead-story .image-content {
   background-image: url("../images/champagne.png");
   font-size: 40px;
   margin-top: 0px;
   text-align: left;
+}
+
+.lead-story .image-content span {
+  margin-left: 20px;
 }
 
 .fall-cancelled.image-content {
@@ -90,20 +114,72 @@ div {
   background-image: url("../images/cat.png");
 }
 
-.narrative {
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-
 .stories {
   display: flex;
   justify-content: space-between;
+  width: 630px;
 }
 
 .story {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 300px;
+}
+
+/*Third Column Specific*/
+
+.news-bites {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.news-bites h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 15px 15px;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+  width: 100%;
+  margin-top: 75px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: 2px solid white;
+}
+
+footer nav {
+  padding-left: 25px;
 }
